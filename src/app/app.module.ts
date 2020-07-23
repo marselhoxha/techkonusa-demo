@@ -5,21 +5,22 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { AlertComponent } from './_directives';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { AuthGuard } from './_guards';
 import { fakeBackendProvider, JwtInterceptor, ErrorInterceptor, ApiBaseUrlInterceptor, LoaderInterceptor } from './_helpers';
 import { AlertService, AuthenticationService, UserService, MarketDataService, LoaderService } from './_services';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
+    HomeComponent,
     LoginComponent,
-    AlertComponent
+    RegisterComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
