@@ -13,6 +13,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { AuthGuard } from './_guards';
 import { fakeBackendProvider, JwtInterceptor, ErrorInterceptor, ApiBaseUrlInterceptor, LoaderInterceptor } from './_helpers';
 import { AlertService, AuthenticationService, UserService, MarketDataService, LoaderService } from './_services';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AlertService, AuthenticationService, UserService, MarketDataService, Lo
     LoginComponent,
     RegisterComponent,
     AlertComponent,
+    ChartsComponent,
   ],
   imports: [
     BrowserModule,
