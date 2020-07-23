@@ -1,0 +1,102 @@
+<div class="row">
+    <div class="col-sm">
+        <h3>Welcome {{currentUser.firstName}}!</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm">
+        <p>Click below to generate market data graphs:</p>
+    </div>
+    <div class="col-sm">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/APPL.json'" (change)="fetchData('/AAPL.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="Apple Inc (AAPL)">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/IBM.json'" (change)="fetchData('/IBM.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="Int'l Business Machines (IBM)">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/CITI.json'" (click)="fetchData('/CITI.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="Citibank (CITI)">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/AXP.json'" (click)="fetchData('/AXP.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="American Express Co. (AXP)">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/CVS.json'" (click)="fetchData('/CVS.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="CVS Health Corp (CVS)">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm json text-center">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input [disabled]="loaderService.isLoading | async" type="radio" name="marketdatalink"
+                            id="'/GE.json'" (click)="fetchData('/GE.json')">
+                    </div>
+                </div>
+                <input disabled type="text" class="form-control" value="General Electric (GE)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm json"></div>
+</div>
+<div class="row">
+    <div id="graphContainer"></div>
+</div>

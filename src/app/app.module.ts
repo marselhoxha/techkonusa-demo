@@ -23,7 +23,10 @@ import { AlertService, AuthenticationService, UserService, MarketDataService, Lo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HighchartsChartModule,
+    HttpClientModule
   ],
   providers: [
     AuthGuard,

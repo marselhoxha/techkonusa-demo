@@ -1,0 +1,13 @@
+.json{
+    padding-top: 1vh;
+}
+
+input[type=text]{
+    font-weight: 700;
+    text-overflow: ellipsis;
+}
+
+#graphContainer{
+    width: 100%;
+}
+
