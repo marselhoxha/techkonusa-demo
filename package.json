@@ -27,7 +27,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
-    "highcharts": "^8.1.2",
+    "highcharts": "^9.0.0",
     "highcharts-angular": "^2.6.0",
     "jquery": "^3.4.1",
     "nodemon": "^2.0.4",
